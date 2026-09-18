@@ -1,0 +1,15 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Regla de seguridad perimetral para la colección de tareas (tasks) del taller
+    match /tasks/{taskId} {
+      // Un usuario solo puede leer, crear, actualizar o eliminar si está completamente autenticado
+      // y si su identificador único (uid) coincide estrictamente con el ownerId de la tarea.
+      allow read, write: if request.auth != null && request.auth.uid == request.resource.data.ownerId;
+      allow delete: if request.auth != null && request.auth.uid == resource.data.ownerId;
+    }
+
+  }
+}

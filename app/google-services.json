@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "80936923782",
+    "project_id": "miappcompose-83c98",
+    "storage_bucket": "miappcompose-83c98.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80936923782:android:f5201231ef990eaf59d707",
+        "android_client_info": {
+          "package_name": "com.sena.crud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu1kv7NucauweQKEUafsCsCf94amsPX_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
